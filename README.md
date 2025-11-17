@@ -1,56 +1,104 @@
-# AI-Research-Notes
-Start to learn Machine Learning and Deep Learning.Try to run the code in essays.
-# TYUT-AI-Research-Notes
+# **TYUT AI Research Notes**
 
- **Author:** Maria Mo  
- **Affiliation:** Taiyuan University of Technology - Computer Science Experimental Class  
- **Focus:** Applied AI, Machine Learning, and Paper Reproduction  
- **Stage:** Undergraduate Research Preparation
+A curated repository documenting my continuous learning in **Machine Learning**, **Deep Learning**, and **Applied AI Research**.
+This repo includes **fundamentals**, **applied projects**, and **paper replications**, aiming to build a solid foundation for undergraduate-level AI research.
 
----
-
-##  Overview
-This repository documents my journey in learning and practicing **AI & Machine Learning** research.
-It includes foundational modeling projects, applied AI experiments, and paper reproduction notebooks.
+Author: **Maria Mo**
+Affiliation: *Taiyuan University of Technology — Computer Science Experimental Class*
+Focus: *Machine Learning · Deep Learning · Research Practice*
 
 ---
 
-##  Structure
+## **Overview**
 
-| Folder | Description |
-|--------|--------------|
-| `00_Environment_Setup/` | Python, Colab, and GitHub setup notes |
-| `01_ML_Basics/` | Basic machine learning modeling (linear regression, random forest, etc.) |
-| `02_AI_Applications/` | Applied AI projects (sentiment analysis, recommendation, etc.) |
-| `03_Paper_Replication/` | Replication of AI-related research papers |
-| `assets/` | Images and visualization results |
+This repository collects my notes, experiments, and code implementations while learning AI.
+It includes:
 
----
-
-##  Current Progress
-
- `01_Housing_Price_Prediction.ipynb` – Regression models comparison (Linear vs Random Forest)  
- `02_Model_Interpretation.ipynb` – Feature importance & visualization  
- NLP Sentiment Analysis Project (BERT-based)
+* Machine Learning basics and experiments
+* Applied AI mini-projects
+* Paper reproduction notebooks
+* Model explainability (PDP, ICE, SHAP)
+* Research-oriented coding practice
 
 ---
 
-##  Environment
+## **Repository Structure**
 
-- Python 3.10+  
-- Google Colab
-- Libraries: `numpy`, `pandas`, `matplotlib`, `sklearn`, `seaborn`
-
----
-
-##  Future Work
-
-- Add explainability section (SHAP / feature analysis)  
-- Begin text classification tasks using deep learning models  
-- Replicate one recent AI paper in 2025
+| Folder                           | Description                                                                      |
+| -------------------------------- | -------------------------------------------------------------------------------- |
+| **00_Environment_Setup/**        | Notes on Python, Conda/Colab, virtual environments, Git/GitHub configuration     |
+| **01_ML_Basics/**                | Foundational ML modeling projects (regression, classification, feature analysis) |
+| └─ **Housing_Price_Prediction/** | California Housing dataset regression + model interpretation                     |
+| └─ explanation/                  | PDP、ICE、SHAP explainability plots & notes                                        |
+| **02_AI_Applications/**          | Applied AI projects (sentiment analysis, recommendation systems, etc.)           |
+| **03_Paper_Replication/**        | Replication and analysis of published AI papers                                  |
+| **assets/**                      | Shared images, visualizations                                                    |
 
 ---
 
-##  Contact
+## **Current Progress**
 
-For discussion or collaboration, feel free to reach out!
+### **Machine Learning Basics**
+
+* **01_Housing_Price_Prediction.ipynb** — Linear Regression vs Random Forest
+* **02_Model_Interpretation.ipynb** — SHAP / PDP / ICE interpretability
+* `explanation.md` — Detailed model explanation notes
+
+### **NLP Projects**
+
+* Sentiment Analysis (classical + BERT-based, ongoing)
+
+### **Paper Replication**
+
+* Preparing to reproduce 1 ML/DL research paper in 2025
+
+---
+
+## **Model Interpretability (SHAP / PDP / ICE)**
+
+Explainability results for the Housing Price project are located in:
+
+```
+01_ML_Basics/Housing_Price_Prediction/explanation/
+```
+
+They include:
+
+* SHAP Summary Plot
+* PDP plot for MedInc
+* ICE plot showing sample-wise variation
+* explanation.md（full interpretation text）
+
+Summary:
+
+* **MedInc（median income）是最重要特征，与房价强正相关**
+* PDP 显示整体趋势稳定、线性
+* ICE 显示不同样本对 MedInc 的影响方向一致
+* SHAP 显示单个预测的贡献细节
+
+---
+
+## **Environment**
+
+* Python 3.10+
+* Google Colab / Local environment
+* Required libraries:
+
+  ```bash
+  numpy pandas matplotlib seaborn scikit-learn shap
+  ```
+
+---
+
+## **Future Work**
+
+* Add more model explainability examples
+* Begin text classification tasks (RNN / BERT)
+* Replicate a 2025 machine learning research paper
+* Add CI/CD for reproducible experiments
+
+---
+
+## **Contact**
+
+If you’re interested in discussing ML/DL projects or undergraduate research collaboration, feel free to reach out!
